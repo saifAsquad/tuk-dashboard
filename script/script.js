@@ -213,7 +213,7 @@ document.querySelector(".close-nav").addEventListener("click", () => {
 
 const links = document.querySelectorAll(".dashboard-links");
 links.forEach((link) => {
-	if (link.attributes.href.value === location.pathname) {
+	if (link.attributes.href.value == location.pathname) {
 		link.children[0].classList.remove("text-slate-600");
 		link.children[0].classList.add("text-blue-700", "bg-blue-100");
 		console.log(
